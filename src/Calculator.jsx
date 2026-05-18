@@ -7,11 +7,13 @@ const equalSign = '='
 export const rows = [[7, 8, 9], [4, 5, 6], [1, 2, 3], [0]]
 
 export const Calculator = () => {
-  const [value, setValue] = useState('')
+  const[value, setValue] = useState('')
 
-  const createHandleClick = (op) => () => setValue(value.concat(op))
+  const createHandleClick = (op) => () => setValue(value.concat(op));
+  const variable = "que no se usa"
+  
 
-  return (
+  return(
     <div>
       <h1>Calculator</h1>
       <input value={value} readOnly />
